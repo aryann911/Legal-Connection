@@ -1,0 +1,272 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<!-- Background image -->
+  <div class="container-fluid" >
+    <div class="text-center bg-image" id="main-background">
+      <div class="row py-4">
+        <div class="col-sm-12 col-md-6" id="background-text">
+          <div class="main-img py-5">
+            <h3 class="text-white p-3">WELCOME TO</h3>
+              <h1 class="text-white p-2"><strong>Legal Connection Law Firm</strong> </h1>
+                <h5 class="text-white p-3">We are a leading law firm<br> With more than 20 years of experience</h5>
+                  <div class="mt-4">
+                    <a class="btn btn-role" href="{% url 'select_role' 'lawyer' %}" role="button">
+                      <i class="fa-solid fa-gavel mr-2"></i> Continue as Lawyer
+                    </a>
+                    <a class="btn btn-role" href="{% url 'select_role' 'client' %}" role="button">
+                      <i class="fa-solid fa-user mr-2"></i> Continue as Client
+                    </a>
+                  </div>
+          </div>      
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- Why Us Section ======= -->
+<section id="why-us" class="why-us">
+  <div class="container" data-aos="fade-up">
+    <div class="section-title">
+      <h2>Why Us</h2>
+        <p>Why Choose Our Law Firm</p>
+    </div>
+  <div class="row">
+    <!-- first column -->
+    <div class="col-lg-4">
+      <div class="box" data-aos="zoom-in" data-aos-delay="100">
+        <span>01</span>
+          <h4>Experience & Expertise</h4>
+            <p>Our attorneys have a wealth of experience and expertise in a wide range of practice areas. </p>
+      </div>
+    </div>
+    <!-- second column -->
+    <div class="col-lg-4 mt-4 mt-lg-0">
+        <div class="box" data-aos="zoom-in" data-aos-delay="200">
+          <span>02</span>
+            <h4>Personalized Approach</h4>
+              <p>We understand each client's unique needs and goals, and we develop a personalized strategy </p>
+        </div>
+    </div>
+    <!-- third column -->
+      <div class="col-lg-4 mt-4 mt-lg-0">
+        <div class="box" data-aos="zoom-in" data-aos-delay="300">
+          <span>03</span>
+            <h4>Communication </h4>
+              <p>We are always available to answer our clients' questions and keep them informed about the status of their case.</p>
+        </div>
+      </div>
+    </div>
+    <br>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left">
+        <img src="https://res.cloudinary.com/dremtdt73/image/upload/v1678975992/pexels-august-de-richelieu-4427431_jj6erl.jpg" class="img-fluid" alt="">
+      </div>
+      <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
+        <h5>At our law firm, we are dedicated to providing our clients with the highest level of legal representation and guidance. Our team of experienced attorneys and staff are committed to helping our clients navigate even the most complex legal issues with ease.
+        </h5><br>
+        <h5> Our attorneys have a wealth of experience in a wide range of practice areas, including but not limited to personal injury, family law, criminal defense, and business law.
+        </h5><br>
+        <h5>We believe that open communication, trust, and mutual respect are essential components of a successful attorney-client relationship, and we strive to cultivate these values in every interaction.
+        </h5>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Team Section-->
+<section id="team" class="team" >
+  <div class="container" data-aos="fade-up">
+    <div class="section-title">
+      <h2>Team</h2>
+      <p>Partners at Legal Connection Law Firm</p>
+    </div>
+  <div class="row pb-5" id="team-section">
+  <!-- first card-->
+    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+      <div class="card shadow-sm border-0 rounded" >
+        <div class="card-body p-0"><img src="https://res.cloudinary.com/dremtdt73/image/upload/v1678890673/James-599x500_xiwsb5.jpg" alt="worker-de-jure" class="w-100 card-img-top">
+          <div class="p-4" id="card-team-body-1">
+            <h5 class="mb-0">ADV. RAJESH SHARMA</h5>
+              <p class="small text-muted">PARTNER</p>
+                <ul class="social mb-0 list-inline mt-3">
+                  <li class="list-inline-item m-0"><a href="#" class="social-link-team"><i class="fa fa-facebook-f"></i></a></li>
+                  <li class="list-inline-item m-0"><a href="#" class="social-link-team"><i class="fa fa-twitter"></i></a></li>
+                  <li class="list-inline-item m-0"><a href="#" class="social-link-team"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- second card-->
+    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+        <div class="card shadow-sm border-0 rounded">
+          <div class="card-body p-0"><img src="https://res.cloudinary.com/dremtdt73/image/upload/v1678890718/Jodan1-599x500_vnysqz.jpg" alt="worker-de-jure" class="w-100 card-img-top">
+            <div class="p-4" id="card-team-body-2">
+              <h5 class="mb-0">ADV. MNV GUPTA</h5>
+                <p class="small text-muted">PARTNER</p>
+                  <ul class="social mb-0 list-inline mt-3">
+                    <li class="list-inline-item m-0"><a href="#" class="social-link-team"><i class="fa fa-facebook-f"></i></a></li>
+                    <li class="list-inline-item m-0"><a href="#" class="social-link-team"><i class="fa fa-twitter"></i></a></li>
+                    <li class="list-inline-item m-0"><a href="#" class="social-link-team"><i class="fa fa-instagram"></i></a></li>
+                  </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+  <!-- third card-->
+    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+        <div class="card shadow-sm border-0 rounded">
+          <div class="card-body p-0"><img src="https://res.cloudinary.com/dremtdt73/image/upload/v1678890799/Emma2-599x500_cgbd9g.jpg" alt="worker-de-jure" class="w-100 card-img-top">
+            <div class="p-4" id="card-team-body-3">
+              <h5 class="mb-0">ADV. ANUSHKA SINGH</h5>
+                <p class="small text-muted">PARTNER</p>
+                  <ul class="social mb-0 list-inline mt-3">
+                    <li class="list-inline-item m-0"><a href="#" class="social-link-team"><i class="fa fa-facebook-f"></i></a></li>
+                    <li class="list-inline-item m-0"><a href="#" class="social-link-team"><i class="fa fa-twitter"></i></a></li>
+                    <li class="list-inline-item m-0"><a href="#" class="social-link-team"><i class="fa fa-instagram"></i></a></li>
+                  </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+  <!-- fourth card -->
+    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+        <div class="card shadow-sm border-0 rounded">
+          <div class="card-body p-0"><img src="https://res.cloudinary.com/dremtdt73/image/upload/v1678890752/joel1-599x500_njza6t.jpg" alt="worker-4" class="w-100 card-img-top">
+            <div class="p-4" id="card-team-body-4">
+              <h5 class="mb-0">ADV. VIKRAM VERMA</h5>
+                <p class="small text-muted">PARTNER</p>
+                  <ul class="social mb-0 list-inline mt-3">
+                    <li class="list-inline-item m-0"><a href="#" class="social-link-team"><i class="fa fa-facebook-f"></i></a></li>
+                    <li class="list-inline-item m-0"><a href="#" class="social-link-team"><i class="fa fa-twitter"></i></a></li>
+                    <li class="list-inline-item m-0"><a href="#" class="social-link-team"><i class="fa fa-instagram"></i></a></li>
+                  </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+    </div>
+  </div>
+</section>
+<!-- testimonials -->
+<section id="testimonial" class="testimonial" >
+  <div class="container-lg" data-aos="fade-up">
+    <div class="section-title col-sm-12">
+      <h2>testimonials</h2>
+      <p>What Our Clients Are Saying About Us</p>
+    </div>
+        <div class="row">        
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Carousel indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>   
+            <!-- Carousel inner -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="testimonial-wrapper">
+                      <div class="testimonial">"I was extremely impressed with the level of service I received from this law firm. The attorneys and staff were highly professional. They kept me informed throughout the entire legal process and provided me with expert guidance that helped me achieve the best possible outcome for my case."</div>
+                      <div class="media-body">
+                        <div class="overview">
+                          <div class="name"><b>Suman Rao</b></div>
+                          <div class="star-rating">
+                            <ul class="list-inline">
+                              <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                              <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                              <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                              <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                              <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="testimonial-wrapper">
+                      <div class="testimonial">"I had a great experience with this law firm. The lawyers were knowledgeable, compassionate, and always went above and beyond to ensure that my needs were met. They were able to achieve a positive outcome for my case, and I would highly recommend them to anyone in need of legal services."</div>
+                      <div class="media-body">
+                        <div class="overview">
+                          <div class="name"><b>Rahul Verma</b></div>
+                          <div class="star-rating">
+                            <ul class="list-inline">
+                              <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                              <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                              <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                              <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                              <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="testimonial-wrapper">
+                      <div class="testimonial">"The team at this law firm is exceptional. They are highly skilled and experienced, and they truly care about their clients. They provided me with expert guidance and support throughout the entire legal process, and I am extremely grateful for their hard work and dedication."</div>
+                      <div class="media-body">
+                        <div class="overview">
+                          <div class="name"><b>Sanjay Singh</b></div>
+                          <div class="star-rating">
+                            <ul class="list-inline">
+                              <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                              <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                              <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                              <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                              <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="testimonial-wrapper">
+                      <div class="testimonial">"I can say enough good things about this law firm. The attorneys and staff were highly professional and knowledgeable, and they made me feel like my case was their top priority. They were able to achieve a successful outcome for my case, and I would highly recommend them to anyone in need of legal services."</div>
+                      <div class="media-body">
+                        <div class="overview">
+                          <div class="name"><b>Anita Desai</b></div>
+                          <div class="star-rating">
+                            <ul class="list-inline">
+                              <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                              <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                              <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                              <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                              <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Carousel controls -->
+            <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+              <i class="fa fa-chevron-left fa-2x text-warning"></i>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+              <i class="fa fa-chevron-right fa-2x text-warning"></i>
+            </a>
+          </div>
+</section>
+
+{%endblock%}

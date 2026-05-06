@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="booking-page mt-5 pt-5 text-center">
+   <h3 class="text-center mb-5">Lawyer Dashboard - All Appointments</h3>
+      {% for b in bookings %}
+         <div class="card text-black border-secondary mb-4 shadow-sm">
+            <div class="card-body">
+               <div class="booking-text text-left">
+                  <div class="row">
+                     <div class="col-md-6">
+                        <p><strong>Booking ID:</strong> {{ b.id }}</p>
+                        <p><strong>Client Name:</strong> {{ b.name }}</p>
+                        <p><strong>Client Email:</strong> {{ b.email }}</p>
+                        <p><strong>Client Phone:</strong> {{ b.phone }}</p>
+                     </div>
+                     <div class="col-md-6">
+                        <p class="text-primary"><strong>Date:</strong> {{ b.date }}</p>
+                        <p class="text-primary"><strong>Time:</strong> {{ b.time }}</p>
+                        <p><strong>Service:</strong> {{ b.service.service_name }}</p>
+                        <p><strong>Payment Status:</strong> 
+                           {% if b.is_paid %}
+                              <span class="badge badge-success">Paid</span>
+                           {% else %}
+                              <span class="badge badge-warning">Pending</span>
+                           {% endif %}
+                        </p>
+                     </div>
+                  </div>
+                  <div class="mt-3 text-center">
+                     {% if b.is_paid %}
+                        <a href="{{ b.video_call_link }}" target="_blank"
+                           class="card-link btn btn-success">
+                           <i class="fa-solid fa-video"></i> Start Video Call</a>
+                     {% endif %}
+                     <a href="{% url 'change_booking' b.id %}"
+                        class="card-link btn btn-secondary">
+                           <i class="fa-solid fa-pen-to-square"></i> Reschedule</a>
+                     <a href="{% url 'delete_booking' b.id %}"
+                        class="card-link btn btn-outline-danger">
+                           <i class="fa-solid fa-trash-can"></i> Cancel</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      {% empty %}
+         <div class="booknow-msg p-5 border rounded bg-light">
+            <p class="pt-2 lead">No appointments scheduled yet.</p>
+         </div>
+      {% endfor %}
+</div>
+
+{% endblock content %}
